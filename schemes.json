@@ -1,0 +1,139 @@
+[
+  {
+    "id": "demo-education-support",
+    "name": "Education Support Scheme (DEMO)",
+    "department": "Illustrative education department record",
+    "summary": "Example record for students seeking education-related financial support. This is demonstration data, not an actual government scheme.",
+    "keywords": [
+      "student",
+      "education",
+      "school",
+      "college",
+      "scholarship",
+      "study"
+    ],
+    "eligibility": {
+      "age_min": 14,
+      "age_max": 25,
+      "annual_income_max": 250000,
+      "states": [],
+      "categories": [
+        "any"
+      ],
+      "occupations": [
+        "student"
+      ]
+    },
+    "documents": [
+      "Identity proof (check official instructions)",
+      "Income certificate if required",
+      "Proof of enrolment",
+      "Bank account details if required"
+    ],
+    "application_url": "https://www.myscheme.gov.in/",
+    "official_source": "https://www.myscheme.gov.in/",
+    "last_verified": "Demo record — not verified",
+    "disclaimer": "Illustrative sample only. Not an official scheme or eligibility determination."
+  },
+  {
+    "id": "demo-farmer-information",
+    "name": "Farmer Support Information (DEMO)",
+    "department": "Illustrative agriculture department record",
+    "summary": "Example record for farmers looking for information about agricultural assistance and support services.",
+    "keywords": [
+      "farmer",
+      "agriculture",
+      "cultivation",
+      "crop",
+      "rural",
+      "farm"
+    ],
+    "eligibility": {
+      "age_min": 18,
+      "annual_income_max": 1000000,
+      "states": [],
+      "categories": [
+        "any"
+      ],
+      "occupations": [
+        "farmer"
+      ]
+    },
+    "documents": [
+      "Identity proof (check official instructions)",
+      "Land or cultivation records if required",
+      "Bank details if required"
+    ],
+    "application_url": "https://www.myscheme.gov.in/",
+    "official_source": "https://www.myscheme.gov.in/",
+    "last_verified": "Demo record — not verified",
+    "disclaimer": "Illustrative sample only. Requirements vary by scheme and jurisdiction."
+  },
+  {
+    "id": "demo-small-business",
+    "name": "Small Business Support Information (DEMO)",
+    "department": "Illustrative enterprise support record",
+    "summary": "Example record for self-employed people and small business owners looking for public support or training.",
+    "keywords": [
+      "business",
+      "self employed",
+      "entrepreneur",
+      "enterprise",
+      "training",
+      "loan"
+    ],
+    "eligibility": {
+      "age_min": 18,
+      "annual_income_max": 2000000,
+      "states": [],
+      "categories": [
+        "any"
+      ],
+      "occupations": [
+        "self-employed",
+        "business owner"
+      ]
+    },
+    "documents": [
+      "Identity proof (check official instructions)",
+      "Business registration if required",
+      "Income or bank documents if required"
+    ],
+    "application_url": "https://www.myscheme.gov.in/",
+    "official_source": "https://www.myscheme.gov.in/",
+    "last_verified": "Demo record — not verified",
+    "disclaimer": "Illustrative sample only. This record does not promise a loan or benefit."
+  },
+  {
+    "id": "demo-general-public-services",
+    "name": "General Public Services Directory (DEMO)",
+    "department": "Public service information",
+    "summary": "Example general directory entry for citizens looking for official public-service information and scheme discovery.",
+    "keywords": [
+      "public service",
+      "citizen",
+      "government",
+      "documents",
+      "benefits",
+      "scheme"
+    ],
+    "eligibility": {
+      "age_min": 0,
+      "annual_income_max": 999999999,
+      "states": [],
+      "categories": [
+        "any"
+      ],
+      "occupations": [
+        "any"
+      ]
+    },
+    "documents": [
+      "Requirements depend on the specific service; check the official portal."
+    ],
+    "application_url": "https://www.myscheme.gov.in/",
+    "official_source": "https://www.myscheme.gov.in/",
+    "last_verified": "Demo record — not verified",
+    "disclaimer": "Directory placeholder only. Follow the official department's current instructions."
+  }
+]

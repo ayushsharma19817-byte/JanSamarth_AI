@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="JanSamarth AI is an open-source prototype for exploring public scheme information.">
+  <title>JanSamarth AI — Public Scheme Checker</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand-mark">JS</div>
+    <div>
+      <p class="eyebrow">OPEN-SOURCE GOVTECH PROTOTYPE</p>
+      <h1>JanSamarth AI</h1>
+    </div>
+    <span class="status-pill">Demo</span>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">PUBLIC SCHEME ELIGIBILITY CHECKER</p>
+        <h2>Find public schemes that may fit your profile.</h2>
+        <p>Explore sample scheme information, review matching rules, and follow official links to verify current requirements.</p>
+        <div class="hero-note"><strong>Important:</strong> This prototype is informational. It does not determine official eligibility or guarantee benefits.</div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="art-card"><span>✓</span><b>Citizen-first</b><small>Clear information</small></div>
+        <div class="art-card second"><span>⌕</span><b>Scheme discovery</b><small>Search + rule checks</small></div>
+      </div>
+    </section>
+
+    <section class="workspace">
+      <div class="form-panel">
+        <div class="section-heading">
+          <div><p class="eyebrow">STEP 01</p><h2>Your profile</h2></div>
+          <p class="muted">Only enter information needed for this demo. Do not enter Aadhaar numbers or other sensitive identifiers.</p>
+        </div>
+        <form id="profile-form">
+          <div class="form-grid">
+            <label>Age <span class="required">*</span><input type="number" name="age" min="0" max="120" value="22" required></label>
+            <label>State / Union Territory <span class="required">*</span><input type="text" name="state" placeholder="e.g. Rajasthan" value="Rajasthan" required></label>
+            <label>Annual household income (₹) <span class="required">*</span><input type="number" name="annual_income" min="0" step="1000" value="180000" required></label>
+            <label>Category <span class="required">*</span>
+              <select name="category" required>
+                <option value="General">General</option><option value="OBC">OBC</option><option value="SC">SC</option><option value="ST">ST</option><option value="Other">Other</option><option value="Prefer not to say">Prefer not to say</option>
+              </select>
+            </label>
+            <label>Occupation <span class="required">*</span>
+              <select name="occupation" required>
+                <option value="student">Student</option><option value="farmer">Farmer</option><option value="self-employed">Self-employed</option><option value="business owner">Business owner</option><option value="employee">Employee</option><option value="unemployed">Unemployed</option><option value="other">Other</option>
+              </select>
+            </label>
+            <label class="wide">What are you looking for? <span class="optional">(optional)</span>
+              <input type="text" name="query" placeholder="e.g. scholarship, farmer support, small business">
+            </label>
+          </div>
+          <div class="form-actions">
+            <button type="submit" id="submit-btn">Find matching schemes <span>→</span></button>
+            <button type="button" class="secondary-btn" id="voice-btn" title="Use browser speech recognition if supported">🎙 Voice input</button>
+          </div>
+          <p id="voice-status" class="muted small" aria-live="polite"></p>
+        </form>
+      </div>
+      <aside class="side-panel">
+        <div class="side-icon">✦</div>
+        <h3>How it works</h3>
+        <ol>
+          <li><span>1</span><div><b>Share basic details</b><small>Used only to check the demo rules.</small></div></li>
+          <li><span>2</span><div><b>Review possible matches</b><small>See which sample rules matched.</small></div></li>
+          <li><span>3</span><div><b>Verify with official sources</b><small>Always confirm current conditions before applying.</small></div></li>
+        </ol>
+        <div class="privacy-note">🔒 No profile database is configured. This demo processes the submitted profile in memory for the request.</div>
+      </aside>
+    </section>
+
+    <section id="results-section" class="results-section" hidden>
+      <div class="section-heading results-heading">
+        <div><p class="eyebrow">STEP 02</p><h2>Scheme discovery results</h2></div>
+        <span id="result-count" class="result-count"></span>
+      </div>
+      <p id="notice" class="notice"></p>
+      <div id="results" class="results-grid"></div>
+    </section>
+
+    <section class="open-source-banner">
+      <div><p class="eyebrow">BUILT FOR PUBLIC GOOD</p><h2>Open source. Transparent. Citizen-first.</h2><p>Contributions can add verified scheme records, more languages, improved retrieval, and accessibility features.</p></div>
+      <a href="https://www.myscheme.gov.in/" target="_blank" rel="noopener noreferrer">Explore official scheme portal ↗</a>
+    </section>
+  </main>
+  <footer><span>JanSamarth AI · Open-source prototype</span><span>Sample data only · Verify before applying</span></footer>
+  <script src="/static/app.js"></script>
+</body>
+</html>
